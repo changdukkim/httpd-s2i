@@ -12,8 +12,8 @@ RUN useradd -u 1000 -G root apache \
   && chmod -R 775 /usr/local/apache2 \
   && chown -R apache:root /usr/local/apache2 
 
-# 80포트와 8001 포트를 오픈한다.
-EXPOSE 8001
+# 8080 포트를 오픈한다.
+EXPOSE 8080
 
 USER 1000
  
