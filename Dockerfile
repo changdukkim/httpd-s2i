@@ -5,6 +5,8 @@ LABEL io.k8s.description="Platform for serving static files" \
       io.openshift.expose-services="8080:http" \
       io.openshift.tags="builder,http,http24,apache,httpd,rhscl-httpd24"
 
+LABEL io.openshift.s2i.scripts-url=image:///usr/local/s2i
+
 COPY files/s2i/ /usr/local/s2i
 
 RUN useradd -u 1000 -G root apache \
