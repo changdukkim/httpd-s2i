@@ -1,4 +1,4 @@
-FROM apache:2.4.39
+FROM httpd:2.4.39
 
 LABEL io.k8s.description="Platform for serving static files" \
       io.k8s.display-name="Apache httpd 2.4" \
